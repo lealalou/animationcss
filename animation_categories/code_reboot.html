@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Test Thronte Lea LALOU intégration</title>
+	<meta charset="utf8" />
+	<meta name="viewport" content="initial-scale=1.0">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="_YourNam_ for tatata" />
+
+	<link rel="icon" type="image/png" href="favicon.png" />
+
+
+	<style type="">
+
+body {background: white;}
+.warp { 
+	width: 320px; height: 480px; 
+	position: relative; margin: 0 auto; background: black; 
+	overflow: hidden;
+
+	}
+.liste_categorie  {width: 320px;
+				   height:480px;
+				   left: 80px;
+				   position:relative;
+				   top:500px;}
+
+
+.liste_categorie ul li { position: absolute; list-style: none; }
+.liste_categorie ul li{
+
+margin: 0 auto; 
+-webkit-animation-name:mouvement;
+-webkit-animation-duration:0.5s;
+-webkit-animation-timing-function:ease-out;
+-webkit-animation-iteration-count:1;
+-webkit-animation-fill-mode: forwards;}
+
+
+@-webkit-keyframes mouvement {
+
+ 0% {top:100px;}
+ 100%{top: -300px;}
+
+}
+
+.liste_categorie ul li:nth-child(2) {
+
+
+-webkit-animation-name: mouvement, mouvementdeux ;
+-webkit-animation-duration:0.5s , 0.5s;
+-webkit-animation-delay: 0s , 0.5s ;
+-webkit-animation-timing-function:ease-out,ease-out;
+-webkit-animation-iteration-count: 1 , 1 ;
+-webkit-animation-fill-mode: forwards,forwards;}
+}
+
+
+@-webkit-keyframes mouvement {
+
+ 0% {top:100px;}
+ 100%{top: -300px;}
+
+}
+
+@-webkit-keyframes mouvementdeux {
+
+ 0% {left: 50px; }
+  50% { -webkit-transform:translate(-80px,-80px);}
+/* 80% { -webkit-transform:translate(-110px,-110px);}*/
+ 100%{ -webkit-transform:translate(-100px,-100px);}
+
+
+}
+
+.liste_categorie ul li:nth-child(3) {
+
+
+-webkit-animation-name: mouvement, mouvementtrois ;
+-webkit-animation-duration:0.5s , 0.5s;
+-webkit-animation-delay: 0s , 0.5s ;
+-webkit-animation-timing-function:ease-out,ease-out;
+-webkit-animation-iteration-count: 1 , 1 ;
+-webkit-animation-fill-mode: forwards,forwards;}
+}
+
+
+@-webkit-keyframes mouvement {
+
+ 0% {top:100px;}
+ 100%{top: -300px;}
+
+}
+
+@-webkit-keyframes mouvementtrois {
+
+ 0% {left: 50px; }
+  50% { -webkit-transform:translate(-80px,80px);}
+/* 80% { -webkit-transform:translate(-110px,110px);}*/
+ 100%{ -webkit-transform:translate(-100px,100px);}
+
+
+}
+
+.liste_categorie ul li:nth-child(4) {
+
+-webkit-animation-name: mouvement, mouvementquatre ;
+-webkit-animation-duration:0.5s , 0.5s;
+-webkit-animation-delay: 0s , 0.5s ;
+-webkit-animation-timing-function:ease-out,ease-out;
+-webkit-animation-iteration-count: 1 , 1 ;
+-webkit-animation-fill-mode: forwards,forwards;}
+}
+
+
+@-webkit-keyframes mouvement {
+
+ 0% {top:100px;}
+ 100%{top: -300px;}
+}
+
+@-webkit-keyframes mouvementquatre {
+
+ 0% {left: 50px; }
+  50% { -webkit-transform:translate(80px,80px);}
+/* 80% { -webkit-transform:translate(110px,110px);}*/
+ 100%{ -webkit-transform:translate(100px,100px);}
+
+}
+
+.liste_categorie ul li:nth-child(5) {
+
+
+-webkit-animation-name: mouvement, mouvementcinq ;
+-webkit-animation-duration:0.5s , 0.5s;
+-webkit-animation-delay: 0s , 0.5s ;
+-webkit-animation-timing-function:ease-out,ease-out;
+-webkit-animation-iteration-count: 1 , 1 ;
+-webkit-animation-fill-mode: forwards,forwards;}
+}
+
+
+@-webkit-keyframes mouvement {
+
+ 0% {top:200px;}
+ 100%{top: -300px;}
+
+}
+
+@-webkit-keyframes mouvementcinq {
+
+ 0% {left: 50px; }
+ 50% { -webkit-transform:translate(80px,-80px);}
+/* 80% { -webkit-transform:translate(110px,-110px);}*/
+ 100%{ -webkit-transform:translate(100px,-100px);}
+
+}
+	</style>
+
+
+
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+
+<div class="warp">
+<div class="liste_categorie">
+<ul>
+	<li><a href="#"><img src="rond_categories.png"></li>
+	<li><img src="rond_categories.png"></li>
+	<li><img src="rond_categories.png"></li>
+	<li><img src="rond_categories.png"></li>
+	<li><img src="rond_categories.png"></li>
+	<li><img src="rond_categories.png"></li>
+
+
+</ul>
+</div>
+</div>
+
+</body>
+</html>
